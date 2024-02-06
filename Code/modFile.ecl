@@ -24,5 +24,5 @@
 			 UNSIGNED3 year_built;
 		END;
 		// Raw dataset declaration
-		EXPORT File := DATASET('~propertiesXXX',Layout,CSV);  
+		EXPORT File := DATASET('~properties.csv',Layout,CSV);  
 END;
