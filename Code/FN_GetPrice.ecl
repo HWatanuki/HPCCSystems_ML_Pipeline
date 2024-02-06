@@ -24,6 +24,6 @@ EXPORT FN_GetPrice(Zip, Assess_val, Year_acq,
 		myLearner := LT.RegressionForest(10,,10,[1]);
 		myPredictDeps := MyLearner.Predict(myModel, myIndepData);
 	
-		RETURN OUTPUT(myPredictDeps,{preco:=ROUND(value)});
+		RETURN OUTPUT(myPredictDeps,{price:=ROUND(value)});
 		
 END;
