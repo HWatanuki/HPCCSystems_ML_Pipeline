@@ -1,5 +1,9 @@
 {
     "ecl.forceProxySupport": true,
-    "ecl.launchConfiguration": "localhost",
-    "ecl.targetCluster": {}
+    "ecl.launchConfiguration": "vm",
+    "ecl.targetCluster": {
+        "university": "hthor",
+        "vm": "hthor"
+    },
+    "ecl.eclccPath": "C:\\Program Files (x86)\\HPCCSystems\\9.0.14\\clienttools\\bin\\eclcc.exe"
 }

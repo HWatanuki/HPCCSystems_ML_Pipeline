@@ -6,7 +6,7 @@ myLearnerR    := LT.RegressionForest(10,,10,[1]);
 // myLearnerR    := LT.RegressionForest(,,,[1]); 
 // Get the trained model
 myModelR      := myLearnerR.GetModel($.modSeg.myIndTrainDataNF,$.modSeg.myDepTrainDataNF);
-OUTPUT(myModelR,,'~mymodelXXX',NAMED('TrainedModel'),OVERWRITE); 
+//OUTPUT(myModelR,,'~mymodelXXX',NAMED('TrainedModel'),OVERWRITE); 
 // Test the model
 predictedDeps := myLearnerR.Predict(myModelR, $.modSeg.myIndTestDataNF);
 OUTPUT(predictedDeps,NAMED('PredictedModel'));
